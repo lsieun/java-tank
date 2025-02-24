@@ -22,15 +22,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.13.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
-                    <fork>true</fork>
                     <compilerArgs>
                         <arg>-g</arg>
                         <arg>-parameters</arg>
-                        <arg>-XDignore.symbol.file</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
@@ -38,7 +36,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.4.1</version>
                 <configuration>
                     <archive>
                         <manifest>
